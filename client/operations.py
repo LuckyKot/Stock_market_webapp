@@ -87,7 +87,7 @@ def buy_on_market(portfolio,ticker,shares,api_url="http://127.0.0.1:5000/stocks"
             "shares":-shares,
             }
 
-    response=requests.put(api_url,data=json.dumps(data))
+    response=requests.post(api_url,data=json.dumps(data))
 
     
     if "success" not in response.text:
@@ -123,7 +123,7 @@ def sell_on_market(portfolio,ticker,shares,api_url="http://127.0.0.1:5000/stocks
             "shares":shares,
             }
     
-    response=requests.put(api_url,data=json.dumps(data))
+    response=requests.post(api_url,data=json.dumps(data))
 
     if "success" not in response.text:
         print("\ntransaction failed\n")

@@ -43,7 +43,7 @@ def get_stocks():
     stocks=get_data()
     return json.dumps(stocks)
 
-@api.route('/stocks', methods=['PUT'])
+@api.route('/stocks', methods=['POST'])
 def transaction():
     try:
         req=request.get_data()

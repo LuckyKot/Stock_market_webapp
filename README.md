@@ -1,6 +1,8 @@
 # Stock_market_webapp
-A simple stock market simulation web application.
-Uses REST API.
+A simple stock market simulation web application.  
+Uses REST API.  
+
+*FOR MY OWN PRACTICE, 0 RELATED INDUSTRIAL EXPERIENCE/COLLEGE COURSES/BOOTCAMPS*
 
 Server folder has stocks.txt, a basic pool of 5 stocks to initialize the server assortment.
 Create_sql.py creates a db out of stocks.txt for the server to use.
